@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="/css/ppt.css">
+    <link rel="stylesheet" href="/css/carregamento.css">
+</head>
+<style>
+
+</style>
+<body>
+        <!-- Background do site -->
+    <div class="bgimg">
+      <img src="/img/RegalAssuredGossamerwingedbutterfly-max-1mb.gif" alt="">
+    </div>
+       <!-- NavBar -->
+       <a id="menu" href="/ppt.html"><h1>JOKENPÔ</h1></a>
+       <a id="menu2" href="/piano.html"><h1>PIANO</h1></a>
+       <a id="menu3" href="/cronometro.html"><h1>CRONÔMETRO</h1></a>
+       <a id="menu4" href="index.html"><h1>MENU</h1></a>
+    <!-- Pedra Papel Tesoura -->
+    <div class="container">
+      <h1>
+         JOKENPÔ
+      </h1>
+      <div class="bloco">
+          <div class="label bg-green">P1</div>
+          <div class="label bg-red">PC</div>
+          <div id="contador" class="placar">
+              0:0
+          </div>
+      </div>
+      <div class="bloco bg-grey selected-image">
+          <div id="user">
+              <img src="/img/rock.png">
+          </div>
+          <div id="pc" class="reverse"></div>
+      </div>
+      <h2>Escolha seu movimento</h2>
+      <div class="buttons">
+          <label>
+              <input type="radio" onclick="reset()" name="play" value="rock" checked>
+              <button class="btn"><img src="/img/rock.png"></button>
+          </label>
+          <label>
+              <input type="radio" onclick="reset()" name="play" value="paper">
+              <button class="btn"><img src="/img/paper.png"></button>
+          </label>
+          <label>
+              <input type="radio" onclick="reset()" name="play" value="scissor">
+              <button class="btn"><img src="/img/scissor.png"></button>
+          </label>
+      </div>
+      <div class="bloco">
+          <button id="playing" class="btn-play">Jogar</button>
+      </div>
+  </div>
+  <div id="winner" class="container end-screen none">
+      <span>🏆🏆🏆</span>
+      <h3>Você Ganhou!</h3>
+      <button onclick="newGame()">Jogar Novamente</button>
+  </div>
+  <div id="loser" class="container end-screen none">
+      <h3>Você Perdeu!</h3>
+      <button onclick="newGame()">Jogar Novamente</button>
+  </div>
+  <div class="preloader" id="preloader">
+    <div class="loader" id="loader"></div>
+</div>
+  <script src="/js/ppt.js"></script>
+  <script src="/js/script_carregamento.js"></script>
+</body>
+</html>
