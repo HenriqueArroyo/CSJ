@@ -94,9 +94,9 @@ document.addEventListener('keyup', (event) => {
         keyElement.classList.remove('active');
     }
 });
-// Adicione um ouvinte de eventos para o teclado
+// Adiciona um ouvinte de eventos para o teclado
 document.addEventListener('keydown', (e) => {
-    // Mapeie as teclas do teclado para as notas do piano
+    // Mapeia as teclas do teclado para as notas do piano
     const keyMap = {
         a: 'C&',
         w: 'A&',
@@ -122,7 +122,7 @@ document.addEventListener('keydown', (e) => {
         "'": 'F',
     };
 
-    // Verifique se a tecla pressionada está mapeada e reproduza o som correspondente
+    // Verifica se a tecla pressionada está mapeada e reproduza o som correspondente
     if (keyMap[e.key]) {
         playSound(keyMap[e.key]);
         const keyElement = document.querySelector(`[data-note="${keyMap[e.key]}"]`);
@@ -133,7 +133,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 document.addEventListener('keyup', (e) => {
-    // Remova a classe 'active' quando a tecla for liberada
+    // Remove a classe 'active' quando a tecla for liberada
     const keyElement = document.querySelector(`[data-note="${keyMap[e.key]}"]`);
     if (keyElement) {
         keyElement.classList.remove('active');

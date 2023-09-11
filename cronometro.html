@@ -7,50 +7,6 @@
     <link rel="stylesheet" href="/css/cronometro.css">
     <link rel="stylesheet" href="/css/carregamento.css">
 </head>
-<style>
-  .cronometro{
-    text-align: center;
-    position: absolute;
-    margin-top: 20%;
-    margin-left: 45%;
-  }
-  #relogio{
-    color: white;
-}
-
-div{
-    text-align: center;
-}
-
-button{
-    height: 2.2em;
-    width: 5.5em;
-    border: none;
-    color: white;
-}
-
-button:hover{
-    cursor: pointer;
-}
-
-.iniciar-btn{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    border: 1px solid black;
-}
-
-.pausar-btn{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    border: 1px solid black;
-}
-
-.parar-btn{
-    background-color: rgb(255, 255, 255);
-    color: black;
-    border: 1px solid black;
-}
-</style>
 <body>
         <!-- Background do site -->
     <div class="bgimg">
@@ -63,11 +19,13 @@ button:hover{
 <a id="menu4" href="/index.html"><h1>MENU</h1></a>
 <!-- Cronometro -->
 <section class="cronometro">
-  <h1 id="relogio">00:00</h1>
+  <h1 id="relogio">00:00:00</h1>
   <button class="iniciar-btn" onclick="iniciar()">Iniciar</button>
   <button class="pausar-btn" onclick="pausar()">Pausar</button>
   <button class="parar-btn" onclick="parar()">Parar</button>
 </section>
+
+<!-- Carregamento -->
 <div class="preloader" id="preloader">
     <div class="loader" id="loader"></div>
 </div>

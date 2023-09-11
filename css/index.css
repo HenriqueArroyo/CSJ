@@ -1,0 +1,143 @@
+/* --------------------------------------------------------------------------------- */
+body {
+    margin: 0;
+    background-color: black;
+    }
+    
+    
+    /* Background do Site */
+    .bgimg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    
+    .bgimg img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: blur(8px);
+    }
+    
+    
+    /* NavBar do Site */
+    #menu{ 
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        margin-left: 90%;
+        opacity: 23%;
+        top: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    
+    #menu:hover{
+        position: absolute;
+        opacity: 80%;
+    }
+    
+    #menu2{ 
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        margin-left: 82%;
+        opacity: 23%;
+        top: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    
+    #menu2:hover{
+        position: absolute;
+        opacity: 80%;
+    }
+    
+    #menu3{ 
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        margin-left: 67%;
+        opacity: 23%;
+        top: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    
+    #menu3:hover{
+        position: absolute;
+        opacity: 80%;
+    }
+    
+    #menu4{ 
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        margin-left: 60%;
+        opacity: 23%;
+        top: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    
+    #menu4:hover{
+        position: absolute;
+        opacity: 80%;
+    }
+    /* ------------------------------------------------------------------------- */
+
+.botao {
+    position: absolute;
+    top: 32%;
+    left: 23%;
+    
+}
+
+.botao a {
+    padding: 30px;
+}
+
+.botao img {
+    height: 310px;
+    width: 200px;
+    filter: blur(1px);
+    border-radius: 40px;
+    border:5px solid black;
+}
+
+#piano {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: absolute;
+   top: 45%;
+   left: 10%;
+ background-color: white;
+border: 3px solid black;
+border-radius: 10px;
+}
+
+#cronometro {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: absolute;
+   top: 49%;
+   left: 39%;
+ background-color: white;
+border: 3px solid black;
+border-radius: 10px;
+font-size: 23px;
+}
+
+#ppt {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: absolute;
+   top: 45%;
+   left: 74%;
+ background-color: white;
+border: 3px solid black;
+border-radius: 10px;
+}
