@@ -3,39 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piano</title>
-    <link rel="stylesheet" href="/css/piano.css">
-
+    <title>Piano Virtual</title>
+<link rel="stylesheet" href="/css/piano.css">
 </head>
 <body>
+      <!-- NavBar -->
+  <a id="menu" href="ppt.html"><h1>JOKENPÔ</h1></a>
+  <a id="menu2" href="piano.html"><h1>PIANO</h1></a>
+  <a id="menu3" href="cronometro.html"><h1>CRONÔMETRO</h1></a>
+  <a id="menu4" href="index.html"><h1>MENU</h1></a>
 
+    <div class="bg">
+        <video src="VID_20230901_140117.mp4" muted loop autoplay></video>
+    </div>
 
-<!-- Piano -->
-
-<div class="harmony"></div>
-<div class="piano">
-    <div class="key white-key" data-note="A"></div>
-    <div class="key black-key" data-note="W"></div>
-    <div class="key white-key" data-note="S"></div>
-    <div class="key black-key" data-note="E"></div>
-    <div class="key white-key" data-note="D"></div>
-    <div class="key black-key" data-note="F"></div>
-    <div class="key white-key" data-note="T"></div>
-    <div class="key black-key" data-note="G"></div>
-    <div class="key white-key" data-note="Y"></div>
-    <div class="key black-key" data-note="H"></div>
-    <div class="key white-key" data-note="U"></div>
-    <div class="key black-key" data-note="K"></div>
-    <div class="key white-key" data-note="L"></div>
-    <div class="key black-key" data-note="N"></div>
-    <div class="key white-key" data-note="Z"></div>
-    <div class="key black-key" data-note="X"></div>
-    <div class="key white-key" data-note="V"></div>
-</div>
-
-
-</div>
-    <script src="/js/piano.js"></script>
-
+    <div class="piano-container">
+        <div class="piano">
+            <div class="key" data-note="C"></div>
+            <div class="black-key"></div>
+            <div class="key" data-note="D"></div>
+            <div class="black-key"></div>
+            <div class="key" data-note="E"></div>
+            <div class="key" data-note="F"></div>
+            <div class="black-key"></div>
+            <div class="key" data-note="G"></div>
+            <div class="black-key"></div>
+            <div class="key" data-note="A"></div>
+            <div class="black-key"></div>
+            <div class="key" data-note="B"></div>
+        </div>
+    </div>
+<script src="/js/piano.js"></script>
 </body>
 </html>

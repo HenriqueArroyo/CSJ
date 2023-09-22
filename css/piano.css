@@ -1,136 +1,130 @@
 body {
     margin: 0;
-    background-color: black;
-    }
-    .bgimg {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .bgimg img{
-        filter: blur(8px);
-        width: 100%;
-        height: 100%;
-    }
+    overflow: hidden; /* Para cobrir a tela inteira com o vídeo */
+}
 
-    .piano {
-        background-color: #121212;
-        width: 1000px;
-        height: 400px;
-        margin: 100px auto 0;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .controls {
-        color: rgba(255, 255, 255, 0.8);
-        padding: 30px;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-    
-    .controls h1 {
-        font-weight: 500;
-        font-size: 1.4rem;
-    }
-    
-    .switcher {
-        width: 50px;
-        height: 25px;
-        background-color: #555;
-        display: flex;
-        border-radius: 50px;
-        padding: 4px;
-    }
-    
-    .switcher__button {
-        height: 100%;
-        aspect-ratio: 1/1;
-        background-color: #ddd;
-        border-radius: 25px;
-    }
-    
-    .switcher--active {
-        background-color: #006eff;
-        justify-content: flex-end;
-    }
-    
-    .checkbox__label {
-        display: flex;
-        gap: 15px;
-    }
-    
-    .piano__keys {
-        width: 100%;
-        height: 300px;
-        background-color: #181818;
-        border-radius: 15px;
-        padding: 30px 40px;
-        display: flex;
-    }
-    
-    .white {
-        background-color: white;
-        flex-grow: 1;
-        border-radius: 5px;
-        border-bottom: 8px solid #ddd;
-        color: rgba(0, 0, 0, 0.3);
-        margin-left: -17px;
-        z-index: 1;
-    }
-    
-    .key span {
-        font-weight: 600;
-        position: absolute;
-        transition-duration: 300ms;
-    }
-    
-    .key {
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding-bottom: 8px;
-        user-select: none;
-    }
-    
-    .black {
-        width: 40px;
-        background: linear-gradient(black, #333);
-        height: 150px;
-        border-radius: 0 0 5px 5px;
-        border-bottom: 8px solid #222;
-        margin-left: -20px;
-        z-index: 2;
-        color: rgba(255, 255, 255, 0.3);
-    }
-    
-    .piano__keys .white:nth-child(1) {
-        margin-left: 0;
-    }
-    
-    .piano__keys .white:nth-child(5) {
-        margin-right: 20px;
-    }
-    
-    .piano__keys .white:nth-child(12) {
-        margin-right: 20px;
-    }
-    
-    .piano__keys .white:nth-child(17) {
-        margin-right: 20px;
-    }
-    
-    .black--pressed {
-        background: linear-gradient(#222, black);
-        border-bottom: none;
-        height: 148px;
-    }
-    
-    .disabled-keys span {
-        opacity: 0;
-    }
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; /* Coloque o vídeo atrás do piano */
+}
+
+.bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cobrir a tela inteira com o vídeo */
+}
+
+.piano-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 2; /* Coloque o piano na parte superior do vídeo */
+}
+
+.piano {
+    display: flex;
+}
+
+.key {
+    width: 50px;
+    height: 200px;
+    border: 1px solid #000;
+    background-color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.key:hover {
+ transform: scale(1.1);
+}
+
+
+.black-key {
+    width: 30px;
+    height: 120px;
+    background-color: black;
+    position: relative;
+    margin: 0 -15px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.black-key:hover {
+    transform: scale(1.1);
+}
+ /* NavBar do Site */
+#menu{ 
+position: absolute;
+color: white;
+text-decoration: none;
+margin-left: 90%;
+opacity: 23%;
+top: 0%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+z-index: 2; 
+}
+
+#menu:hover{
+position: absolute;
+opacity: 80%;
+z-index: 2; 
+}
+
+#menu2{ 
+position: absolute;
+color: white;
+text-decoration: none;
+margin-left: 82%;
+opacity: 23%;
+top: 0%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+z-index: 2; 
+}
+
+#menu2:hover{
+position: absolute;
+opacity: 80%;
+z-index: 2; 
+}
+
+#menu3{ 
+position: absolute;
+color: white;
+text-decoration: none;
+margin-left: 67%;
+opacity: 23%;
+top: 0%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+z-index: 2; 
+}
+
+#menu3:hover{
+position: absolute;
+opacity: 80%;
+z-index: 2; 
+}
+
+#menu4{ 
+position: absolute;
+color: white;
+text-decoration: none;
+margin-left: 60%;
+opacity: 23%;
+top: 0%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+z-index: 2; 
+}
+
+#menu4:hover{
+position: absolute;
+opacity: 80%;
+z-index: 2; 
+}
+/* ------------------------------------------------------------------------- */
