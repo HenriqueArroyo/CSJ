@@ -18,6 +18,8 @@ Feedback Visual: Criar um feedback visual adequado para os usuários, como desta
 
 Gestão de Eventos: Gerenciar eventos de mouse e teclado e garantir que as ações fossem executadas corretamente em resposta às interações do usuário representou um desafio de lógica e programação.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
 Relatório Cronômetro
 
 O projeto do Cronômetro Digital consiste em uma aplicação JavaScript que permite aos usuários medir o tempo decorrido em horas, minutos e segundos, além de iniciar, pausar e parar o cronômetro. O código envolve a manipulação do tempo, atualização dinâmica da interface do usuário e controle de eventos de clique e teclado.
@@ -54,6 +56,8 @@ Desafios Enfrentados durante o Desenvolvimento:
 Atualização Dinâmica do Tempo: Garantir que o cronômetro atualizasse a cada 10 milissegundos sem sobrecarregar o navegador foi um desafio. O uso de intervalos foi uma solução eficaz.
 
 Formatação do Tempo: Garantir que o tempo fosse exibido com dois dígitos (por exemplo, '02' em vez de '2') envolveu a criação de uma função para formatação.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 Relatório Pedra-Papel-Tesoura
 
