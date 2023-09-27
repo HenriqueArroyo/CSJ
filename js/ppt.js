@@ -9,8 +9,8 @@ const imgPC = document.getElementById("pc") // Imagem do pc
 const playing = document.getElementById("playing") // Botão para jogar
 const contador = document.getElementById("contador") // Contador de pontos
 // Elemento para exibir "vencedor" ou "perdedor"
-const winner = document.getElementById("winner")
-const loser = document.getElementById("loser")
+const venceu = document.getElementById("venceu")
+const perdeu = document.getElementById("perdeu")
 
 // Escolha dos Jogadores
 var player1 = ""
@@ -84,13 +84,13 @@ function analyze() {
 
      // Verifica se alguém alcançou a pontuação máxima
     if (contUser >= 5){
-        winner.classList.remove('none') // Exibe a mensagem de vencedor
-        winner.classList.add('center')
+        venceu.classList.remove('none') // Exibe a mensagem de vencedor
+        venceu.classList.add('center')
     }
 
     if (contPc >= 5){
-        loser.classList.remove('none') // Exibe a mensagem de perdedor
-        loser.classList.add('center')
+        perdeu.classList.remove('none') // Exibe a mensagem de perdedor
+        perdeu.classList.add('center')
     }
 
     // Placar da Partida
@@ -114,8 +114,8 @@ function newGame(){
     contPc = 0
     contUser = 0
     reset()
-    winner.classList.add('none')
-    winner.classList.remove('center')
-    loser.classList.add('none')
-    loser.classList.remove('center')
+    venceu.classList.add('none')
+    venceu.classList.remove('center')
+    perdeu.classList.add('none')
+    perdeu.classList.remove('center')
 }

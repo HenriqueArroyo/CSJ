@@ -25,7 +25,8 @@ body {
     
     /* NavBar do Site */
     #menu{ 
-        position: absolute;
+        padding: 15px;
+        position: fixed;
         color: white;
         text-decoration: none;
         margin-left: 90%;
@@ -36,12 +37,13 @@ body {
     }
     
     #menu:hover{
-        position: absolute;
+        position: fixed;
         opacity: 80%;
     }
     
     #menu2{ 
-        position: absolute;
+        padding: 15px;
+        position: fixed;
         color: white;
         text-decoration: none;
         margin-left: 82%;
@@ -52,15 +54,16 @@ body {
     }
     
     #menu2:hover{
-        position: absolute;
+        position: fixed;
         opacity: 80%;
     }
     
     #menu3{ 
-        position: absolute;
+        padding: 15px;
+        position: fixed;
         color: white;
         text-decoration: none;
-        margin-left: 67%;
+        margin-left: 68%;
         opacity: 23%;
         top: 0%;
         font-family: Arial, Helvetica, sans-serif;
@@ -68,15 +71,16 @@ body {
     }
     
     #menu3:hover{
-        position: absolute;
+        position: fixed;
         opacity: 80%;
     }
     
     #menu4{ 
-        position: absolute;
+        padding: 15px;
+        position: fixed;
         color: white;
         text-decoration: none;
-        margin-left: 60%;
+        margin-left: 61%;
         opacity: 23%;
         top: 0%;
         font-family: Arial, Helvetica, sans-serif;
@@ -84,8 +88,66 @@ body {
     }
     
     #menu4:hover{
-        position: absolute;
+        position: fixed;
         opacity: 80%;
+    }
+
+    @media screen and (max-width:1040px) {
+        #menu {
+            margin-left: 0;
+        }
+        #menu2 {
+            margin-left: 20%;
+        }
+        #menu3 {
+            margin-left: 33%;
+        }
+        #menu4 {
+            margin-left: 64%;
+        }
+        .botao {
+            position: absolute;
+            top: 32%;
+            left: 5%;
+            
+        }
+        
+        .botao a {
+            padding: 10px;
+        }
+        
+        .botao img {
+            height: 310px;
+            width: 200px;
+            filter: blur(1px);
+            border-radius: 40px;
+            border:5px solid black;
+        }
+    }
+
+    @media screen and (max-width:1030px) {
+  #piano {
+    position: absolute;
+    top: -500%;
+  }       
+
+  .bgimg {
+    position: absolute;
+    height: 140%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.bgimg img {
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    filter: blur(8px);
+}
+
+
     }
     /* ------------------------------------------------------------------------- */
 
@@ -108,36 +170,3 @@ body {
     border:5px solid black;
 }
 
-#piano {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    position: absolute;
-   top: 45%;
-   left: 10%;
- background-color: white;
-border: 3px solid black;
-border-radius: 10px;
-}
-
-#cronometro {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    position: absolute;
-   top: 49%;
-   left: 39%;
- background-color: white;
-border: 3px solid black;
-border-radius: 10px;
-font-size: 23px;
-}
-
-#ppt {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    position: absolute;
-   top: 45%;
-   left: 74%;
- background-color: white;
-border: 3px solid black;
-border-radius: 10px;
-}

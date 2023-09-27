@@ -22,26 +22,23 @@
        <a id="menu4" href="index.html"><h1>MENU</h1></a>
     <!-- Pedra Papel Tesoura -->
     <div class="container">
-      <h1>
-         JOKENPÔ
-      </h1>
       <!-- Placar -->
       <div class="bloco">
-          <div class="label bg-green">P1</div>
-          <div class="label bg-red">PC</div>
+          <div class="label bg-usuario">P1</div>
+          <div class="label bg-computador">PC</div>
           <div id="contador" class="placar">
               0:0
           </div>
       </div>
       <!-- Imagem Default -->
-      <div class="bloco bg-grey selected-image">
+      <div class="bloco bg-fundo selected-image">
           <div id="user">
               <img src="/img/rock.png">
           </div>
           <div id="pc" class="reverse"></div>
       </div>
       <h2>Escolha seu movimento</h2>
-      <div class="buttons">
+      <div class="botoes">
         <!-- Escolha de Movimentos -->
           <label>
               <input type="radio" onclick="reset()" name="play" value="rock" checked>
@@ -58,15 +55,15 @@
       </div>
       <!-- Jogar e Resultado -->
       <div class="bloco">
-          <button id="playing" class="btn-play">Jogar</button>
+          <button id="playing" class="botaoJogar">Jogar</button>
       </div>
   </div>
-  <div id="winner" class="container end-screen none">
+  <div id="venceu" class="container telaFinal none">
       <span>🏆🏆🏆</span>
       <h3>Você Ganhou!</h3>
       <button onclick="newGame()">Jogar Novamente</button>
   </div>
-  <div id="loser" class="container end-screen none">
+  <div id="perdeu" class="container telaFinal none">
       <h3>Você Perdeu!</h3>
       <button onclick="newGame()">Jogar Novamente</button>
   </div>

@@ -47,6 +47,10 @@ body {
 }
 
 
+.key.active{
+    transform: scale(1.1);
+}
+
 .black-key {
     width: 30px;
     height: 120px;
@@ -61,75 +65,112 @@ body {
     transform: scale(1.1);
 }
  /* NavBar do Site */
-#menu{ 
-position: absolute;
-color: white;
-text-decoration: none;
-margin-left: 90%;
-opacity: 23%;
-top: 0%;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 12px;
-z-index: 2; 
+ #menu{ 
+    padding: 15px;
+    position: fixed;
+    color: white;
+    text-decoration: none;
+    margin-left: 90%;
+    opacity: 23%;
+    top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    z-index: 2; 
+
 }
 
 #menu:hover{
-position: absolute;
-opacity: 80%;
-z-index: 2; 
+    position: fixed;
+    opacity: 80%;
 }
 
 #menu2{ 
-position: absolute;
-color: white;
-text-decoration: none;
-margin-left: 82%;
-opacity: 23%;
-top: 0%;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 12px;
-z-index: 2; 
+    padding: 15px;
+    position: fixed;
+    color: white;
+    text-decoration: none;
+    margin-left: 82%;
+    opacity: 23%;
+    top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    z-index: 2; 
+
 }
 
 #menu2:hover{
-position: absolute;
-opacity: 80%;
-z-index: 2; 
+    position: fixed;
+    opacity: 80%;
 }
 
 #menu3{ 
-position: absolute;
-color: white;
-text-decoration: none;
-margin-left: 67%;
-opacity: 23%;
-top: 0%;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 12px;
-z-index: 2; 
+    padding: 15px;
+    position: fixed;
+    color: white;
+    text-decoration: none;
+    margin-left: 70%;
+    opacity: 23%;
+    top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    z-index: 2; 
+
 }
 
 #menu3:hover{
-position: absolute;
-opacity: 80%;
-z-index: 2; 
+    position: fixed;
+    opacity: 80%;
 }
 
 #menu4{ 
-position: absolute;
-color: white;
-text-decoration: none;
-margin-left: 60%;
-opacity: 23%;
-top: 0%;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 12px;
-z-index: 2; 
+    padding: 15px;
+    position: fixed;
+    color: white;
+    text-decoration: none;
+    margin-left: 63%;
+    opacity: 23%;
+    top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    z-index: 2; 
+
 }
 
 #menu4:hover{
-position: absolute;
-opacity: 80%;
-z-index: 2; 
+    position: fixed;
+    opacity: 80%;
+}
+
+@media screen and (max-width:1040px) {
+    #menu {
+        margin-left: 0;
+    }
+    #menu2 {
+        margin-left: 20%;
+    }
+    #menu3 {
+        margin-left: 33%;
+    }
+    #menu4 {
+        margin-left: 61%;
+    }
+    .botao {
+        position: absolute;
+        top: 32%;
+        left: 5%;
+        
+    }
+    
+    .botao a {
+        padding: 10px;
+    }
+    
+    .botao img {
+        height: 310px;
+        width: 200px;
+        filter: blur(1px);
+        border-radius: 40px;
+        border:5px solid black;
+    }
 }
 /* ------------------------------------------------------------------------- */

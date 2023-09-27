@@ -25,67 +25,94 @@ body {
     
     /* NavBar do Site */
     #menu{ 
-        position: absolute;
+        padding: 15px;
+        position: fixed;
         color: white;
         text-decoration: none;
         margin-left: 90%;
         opacity: 23%;
         top: 0%;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 8px;
+        z-index: 2; 
+    
     }
     
     #menu:hover{
-        position: absolute;
+        position: fixed;
         opacity: 80%;
     }
     
     #menu2{ 
-        position: absolute;
+        padding: 15px;
+        position: fixed;
         color: white;
         text-decoration: none;
         margin-left: 82%;
         opacity: 23%;
         top: 0%;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 8px;
+        z-index: 2; 
+    
     }
     
     #menu2:hover{
-        position: absolute;
+        position: fixed;
         opacity: 80%;
     }
     
     #menu3{ 
-        position: absolute;
+        padding: 15px;
+        position: fixed;
         color: white;
         text-decoration: none;
-        margin-left: 67%;
+        margin-left: 70%;
         opacity: 23%;
         top: 0%;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 8px;
+        z-index: 2; 
+    
     }
     
     #menu3:hover{
-        position: absolute;
+        position: fixed;
         opacity: 80%;
     }
     
     #menu4{ 
-        position: absolute;
+        padding: 15px;
+        position: fixed;
         color: white;
         text-decoration: none;
-        margin-left: 60%;
+        margin-left: 63%;
         opacity: 23%;
         top: 0%;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 8px;
+        z-index: 2; 
+    
     }
     
     #menu4:hover{
-        position: absolute;
+        position: fixed;
         opacity: 80%;
+    }
+    
+    @media screen and (max-width:1040px) {
+        #menu {
+            margin-left: 0;
+        }
+        #menu2 {
+            margin-left: 20%;
+        }
+        #menu3 {
+            margin-left: 33%;
+        }
+        #menu4 {
+            margin-left: 61%;
+        }
     }
     /* ------------------------------------------------------------------------- */
 
@@ -93,7 +120,9 @@ body {
     text-align: center;
     position: absolute;
     top: 40%;
-    margin-left: 40%;
+    /* margin-left: 40%; */
+    padding-left: 40%;
+    padding-right: 40%;
 }
 
 #relogio {
