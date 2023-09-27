@@ -54,3 +54,28 @@ Desafios Enfrentados durante o Desenvolvimento:
 Atualização Dinâmica do Tempo: Garantir que o cronômetro atualizasse a cada 10 milissegundos sem sobrecarregar o navegador foi um desafio. O uso de intervalos foi uma solução eficaz.
 
 Formatação do Tempo: Garantir que o tempo fosse exibido com dois dígitos (por exemplo, '02' em vez de '2') envolveu a criação de uma função para formatação.
+
+Relatório Pedra-Papel-Tesoura
+
+O projeto do Jogo Pedra-Papel-Tesoura consiste em uma aplicação web desenvolvida em JavaScript que permite aos usuários jogar o famoso jogo contra o computador. Os jogadores escolhem entre pedra, papel e tesoura, e o resultado é determinado pelas regras do jogo. O projeto inclui funcionalidades de seleção de escolha, exibição de resultados, contagem de pontos e detecção de vencedores.
+
+Principais Funcionalidades do Projeto:
+
+Contagem de Pontos: O projeto mantém um registro da pontuação do usuário e do computador em variáveis contUser e contPc. Os pontos são atualizados conforme o resultado de cada rodada.
+
+Escolha dos Jogadores: O usuário seleciona sua escolha (pedra, papel ou tesoura) clicando nos botões de opção.
+
+Exibição de Resultados: Após a escolha do usuário e do computador, o resultado do jogo é exibido, incluindo uma animação de vídeo correspondente à escolha vencedora.
+
+Contador de Pontos: O projeto exibe um contador de pontos atualizado para o usuário e o computador.
+
+Detecção de Vencedores: O projeto verifica se um dos jogadores (usuário ou computador) alcançou a pontuação máxima de 5 pontos e exibe uma mensagem de vitória ou derrota correspondente.
+
+Limpar Imagem: A imagem exibida após cada rodada é limpa para preparar o jogo para a próxima rodada.
+
+Desafios Enfrentados durante o Desenvolvimento:
+
+Exibição de Resultados Dinâmicos: Criar lógica para exibir resultados de forma dinâmica, incluindo vídeos de animação para as escolhas vencedoras.
+
+Contagem de Pontos e Detecção de Vencedores: Gerenciar a contagem de pontos e detectar quando um dos jogadores atingiu a pontuação máxima para declarar um vencedor.
+
